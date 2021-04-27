@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Mall</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password">Password</string>
+    <string name="phone_number">Phone number</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="user_name">User name</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="next">Next</string>
+    <string name="back_to_login">Already have account?<br/>Back to login page.</string>
 </resources>
