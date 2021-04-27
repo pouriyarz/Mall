@@ -1,8 +1,10 @@
-package com.google.mall;
+package com.texonapp.mall;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.google.texonapp.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.google.mall.login;
+package com.texonapp.mall.login;
 
 import android.os.Bundle;
 
@@ -13,7 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.mall.R;
+import com.google.texonapp.R;
 
 public class SplashScreenFragment extends Fragment {
 

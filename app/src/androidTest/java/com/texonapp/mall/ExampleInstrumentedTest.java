@@ -1,4 +1,4 @@
-package com.google.mall;
+package com.texonapp.mall;
 
 import android.content.Context;
 

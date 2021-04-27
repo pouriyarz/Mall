@@ -11,4 +11,6 @@
     <string name="confirm_password">Confirm password</string>
     <string name="next">Next</string>
     <string name="back_to_login">Already have account?<br/>Back to login page.</string>
+    <string name="send_sms_hint">A verfication code was sent to you.<br/>Please check your SMS.</string>
+    <string name="enter_code">Enter code</string>
 </resources>
