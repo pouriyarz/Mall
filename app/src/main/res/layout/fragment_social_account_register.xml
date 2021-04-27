@@ -19,56 +19,26 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="@dimen/_120sdp"/>
 
-        <TextView
-            android:id="@+id/hint"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/logo"
-            android:layout_marginLeft="@dimen/_40sdp"
-            android:layout_marginRight="@dimen/_40sdp"
-            android:text="@string/reset_your_password"
-            android:gravity="center"
-            android:textSize="@dimen/_10sdp"
-            android:textColor="@color/clr_black"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"/>
-
         <EditText
-            android:id="@+id/user_password"
+            android:id="@+id/user_phone_number"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_42sdp"
-            app:layout_constraintTop_toBottomOf="@id/hint"
-            android:layout_marginTop="@dimen/_12sdp"
             android:layout_marginLeft="@dimen/_40sdp"
             android:layout_marginRight="@dimen/_40sdp"
-            android:background="@drawable/btn_round_white"
-            android:hint="@string/new_password"
-            android:gravity="center"
-            android:textSize="@dimen/_12sdp"
-            android:textColor="@color/clr_black"
-            android:textColorHint="@color/clr_gray_light"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"/>
-
-        <EditText
-            android:id="@+id/user_confirm_password"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_42sdp"
             android:layout_marginTop="@dimen/_12sdp"
-            android:layout_marginLeft="@dimen/_40sdp"
-            android:layout_marginRight="@dimen/_40sdp"
             android:background="@drawable/btn_round_white"
-            android:hint="@string/password"
             android:gravity="center"
-            android:textSize="@dimen/_12sdp"
+            android:hint="@string/enter_phone_number"
             android:textColor="@color/clr_black"
             android:textColorHint="@color/clr_gray_light"
-            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/user_password"/>
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
 
         <Button
-            android:id="@+id/complete"
+            android:id="@+id/next"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_42sdp"
             android:layout_marginTop="@dimen/_12sdp"
@@ -76,14 +46,14 @@
             android:layout_marginRight="@dimen/_80sdp"
             android:background="@drawable/btn_round_orange"
             android:gravity="center"
-            android:text="@string/complete"
+            android:text="@string/next"
             android:textAllCaps="true"
             android:textSize="@dimen/_12sdp"
             android:textColor="@color/whiteNew"
             android:textColorHint="@color/clr_gray_title"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/user_confirm_password"/>
+            app:layout_constraintTop_toBottomOf="@id/user_phone_number"/>
 
         <TextView
             android:id="@+id/back_to_login"
@@ -98,8 +68,7 @@
             android:textColor="@color/clr_gray_title"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/complete"/>
-
+            app:layout_constraintTop_toBottomOf="@id/next"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

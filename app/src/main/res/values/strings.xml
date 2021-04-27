@@ -10,7 +10,16 @@
     <string name="user_name">User name</string>
     <string name="confirm_password">Confirm password</string>
     <string name="next">Next</string>
-    <string name="back_to_login">Already have account?<br/>Back to login page.</string>
-    <string name="send_sms_hint">A verfication code was sent to you.<br/>Please check your SMS.</string>
+    <string name="already_have_account">Already have account?<br/>Back to login page.</string>
+    <string name="back_to_login">Back to login page.</string>
+    <string name="send_sms_hint">A verification code was sent to you.<br/>Please check your SMS.</string>
     <string name="enter_code">Enter code</string>
+    <string name="resend_in">Resend in</string>
+    <string name="sec">sec</string>
+    <string name="welcome_hint">Congratulations!<br/>You have created an PLE MALL<br/>account!</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="reset_your_password">Reset your password</string>
+    <string name="new_password">New Password</string>
+    <string name="complete">complete</string>
+    <string name="welcome">welcome</string>
 </resources>

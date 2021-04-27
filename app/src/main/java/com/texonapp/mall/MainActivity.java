@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.google.texonapp.R;
+import com.texonapp.mall.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.texonapp.R;
+import com.texonapp.mall.R;
 
 public class ResetPasswordFragment extends Fragment {
 
