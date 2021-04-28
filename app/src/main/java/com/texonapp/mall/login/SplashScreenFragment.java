@@ -19,11 +19,6 @@ public class SplashScreenFragment extends Fragment {
 
     NavController navController;
 
-
-    public SplashScreenFragment() {
-        // Required empty public constructor
-    }
-
     public static SplashScreenFragment newInstance() {
         SplashScreenFragment fragment = new SplashScreenFragment();
 
@@ -33,7 +28,6 @@ public class SplashScreenFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_splash_screen, container, false);
     }
 
@@ -41,12 +35,17 @@ public class SplashScreenFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
-
-        new Handler().postDelayed(new Runnable() {
+        Thread thread = new Thread() {
             @Override
             public void run() {
-                navController.navigate(R.id.action_splashScreenFragment_to_loginFragment);
+                try {
+                    sleep(3000);
+                    navController.navigate(R.id.action_splashScreenFragment_to_loginFragment);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
-        } , 3000);
+        };
+        thread.start();
     }
 }
