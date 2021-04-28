@@ -12,6 +12,27 @@
         <item name="android:windowAnimationStyle">@style/activityAnimation</item>
     </style>
 
+    <style name="Theme.Fab_Bottom_app_bar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#0F9D58</item>
+        <item name="colorPrimaryVariant">#0F9D58</item>
+        <item name="colorOnPrimary">#000</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemBackground">@color/clr_gray_title</item>
+        <item name="itemIconTint">@color/orange</item>
+        <item name="itemTextColor">@color/clr_white</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.BottomNavigation.Overline</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.BottomNavigation.Overline</item>
+        <item name="textAllCaps">true</item>
+        <item name="paddingStart">32dp</item>
+        <item name="paddingEnd">32dp</item>
+    </style>
+
+    <style name="TextAppearance.BottomNavigation.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:textSize">8sp</item>
+    </style>
+
     <style name="activityAnimation" parent="@android:style/Animation">
         <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
         <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>

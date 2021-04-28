@@ -1,9 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.texonapp.mall.MainActivity">
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/draw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="8dp"
+                android:background="@color/clr_gray_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <FrameLayout
+                android:id="@+id/main_content"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/view3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+            </FrameLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nav_mall"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/view3"
+                app:layout_constraintEnd_toStartOf="@+id/nav_consignment"
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toStartOf="@+id/view3"
+                app:layout_constraintTop_toTopOf="@+id/view3">
+
+                <ImageView
+                    android:id="@+id/mall_img"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:src="@drawable/ic_mall"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mall"
+                    android:layout_gravity="center"
+                    android:textColor="@color/clr_white"
+                    app:layout_constraintStart_toStartOf="@id/mall_img"
+                    app:layout_constraintEnd_toEndOf="@id/mall_img"
+                    app:layout_constraintTop_toBottomOf="@id/mall_img"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nav_consignment"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingRight="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/view3"
+                app:layout_constraintEnd_toStartOf="@+id/nav_center"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view3">
+
+                <ImageView
+                    android:id="@+id/cons_img"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/ic_consignment"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/consignment"
+                    android:layout_gravity="center"
+                    android:textColor="@color/clr_white"
+                    app:layout_constraintStart_toStartOf="@id/cons_img"
+                    app:layout_constraintEnd_toEndOf="@id/cons_img"
+                    app:layout_constraintTop_toBottomOf="@id/cons_img"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nav_center"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view3"
+                app:layout_constraintVertical_bias="1.0">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/nav_center_img"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:src="@drawable/ic_asset"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nav_auction"
+                android:layout_width="wrap_content"
+                android:paddingTop="@dimen/_8sdp"
+                android:layout_height="0dp"
+                android:paddingLeft="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/nav_center"
+                app:layout_constraintTop_toTopOf="@+id/view3">
+
+                <ImageView
+                    android:id="@+id/auction_img"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/ic_auction"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/auction"
+                    android:layout_gravity="center"
+                    android:textColor="@color/clr_white"
+                    app:layout_constraintStart_toStartOf="@id/auction_img"
+                    app:layout_constraintEnd_toEndOf="@id/auction_img"
+                    app:layout_constraintTop_toBottomOf="@id/auction_img"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nav_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toEndOf="@+id/nav_auction"
+                app:layout_constraintTop_toTopOf="@+id/view3">
+
+                <ImageView
+                    android:id="@+id/panel_img"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/ic_panel"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/panel"
+                    android:textColor="@color/clr_white"
+                    android:layout_gravity="center"
+                    app:layout_constraintStart_toStartOf="@id/panel_img"
+                    app:layout_constraintEnd_toEndOf="@id/panel_img"
+                    app:layout_constraintTop_toBottomOf="@id/panel_img"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

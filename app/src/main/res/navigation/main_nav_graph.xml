@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mallFragment">
+
+    <fragment
+        android:id="@+id/mallFragment"
+        android:name="com.texonapp.mall.main.MallFragment"
+        android:label="fragment_mall"
+        tools:layout="@layout/fragment_mall" />
+    <fragment
+        android:id="@+id/consignmentFragment"
+        android:name="com.texonapp.mall.main.ConsignmentFragment"
+        android:label="fragment_consignment"
+        tools:layout="@layout/fragment_consignment" />
+    <fragment
+        android:id="@+id/centerFragment"
+        android:name="com.texonapp.mall.main.CenterFragment"
+        android:label="fragment_center"
+        tools:layout="@layout/fragment_center" />
+    <fragment
+        android:id="@+id/auctionFragment"
+        android:name="com.texonapp.mall.main.AuctionFragment"
+        android:label="fragment_auction"
+        tools:layout="@layout/fragment_auction" />
+    <fragment
+        android:id="@+id/panelFragment"
+        android:name="com.texonapp.mall.main.PanelFragment"
+        android:label="fragment_panel"
+        tools:layout="@layout/fragment_panel" />
+</navigation>

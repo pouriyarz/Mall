@@ -43,7 +43,10 @@
     <color name="google_plus_color">#DC4437</color>
     <color name="google_plus_background_color">#212121</color>
     <color name="google_plus_inactive_color">#999999</color>
-    <color name="orange">#ffb300</color>
+    <color name="orange">#ffd400</color>
+    <color name="orange2">#ec411b</color>
+    <color name="orange3">#f16e12</color>
+    <color name="orange4">#fcbe03</color>
 
 
 </resources>

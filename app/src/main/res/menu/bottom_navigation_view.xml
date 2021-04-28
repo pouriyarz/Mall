@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mallFragment"
+        android:icon="@drawable/ic_facebook"
+        android:title="@string/mall"/>
+
+    <item
+        android:id="@+id/consignmentFragment"
+        android:title="@string/consignment"/>
+
+    <item
+        android:id="@+id/centerFragment"
+        tools:ignore="MenuTitle"
+        android:iconTint="@color/clr_white"
+        android:icon="@drawable/ic_center_btn"/>
+
+
+    <item
+        android:id="@+id/auctionFragment"
+        android:title="@string/auction" />
+
+    <item
+        android:id="@+id/panelFragment"
+        android:title="@string/panel"
+        />
+
+</menu>

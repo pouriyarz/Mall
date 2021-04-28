@@ -10,8 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         tools:replace="android:supportsRtl"
-        android:theme="@style/Theme.Mall">
-        <activity android:name="com.texonapp.mall.MainActivity"></activity>
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="com.texonapp.mall.MainActivity">
+        </activity>
         <activity android:name="com.texonapp.mall.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
