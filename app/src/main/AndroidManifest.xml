@@ -9,9 +9,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
-        android:theme="@style/AppTheme"
-        tools:replace="android:supportsRtl">
-        <activity android:name="com.texonapp.mall.MainActivity"></activity>
+
+        tools:replace="android:supportsRtl"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="com.texonapp.mall.MainActivity">
+        </activity>
+
         <activity android:name="com.texonapp.mall.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
