@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setFrag(MallFragment.newInstance());
                 binding.mallImg.setImageResource(R.drawable.ic_orange_mall);
                 binding.consImg.setImageResource(R.drawable.ic_consignment);
-                binding.navCenterImg.setImageResource(R.drawable.ic_asset);
+                binding.navCenterImg.setImageResource(R.drawable.ic_center);
                 binding.auctionImg.setImageResource(R.drawable.ic_auction);
                 binding.panelImg.setImageResource(R.drawable.ic_panel);
             }
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setFrag(ConsignmentFragment.newInstance());
                 binding.mallImg.setImageResource(R.drawable.ic_mall);
                 binding.consImg.setImageResource(R.drawable.ic_orange_consignment);
-                binding.navCenterImg.setImageResource(R.drawable.ic_asset);
+                binding.navCenterImg.setImageResource(R.drawable.ic_center);
                 binding.auctionImg.setImageResource(R.drawable.ic_auction);
                 binding.panelImg.setImageResource(R.drawable.ic_panel);
             }
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setFrag(CenterFragment.newInstance());
                 binding.mallImg.setImageResource(R.drawable.ic_mall);
                 binding.consImg.setImageResource(R.drawable.ic_consignment);
-                binding.navCenterImg.setImageResource(R.drawable.ic_asset);
+                binding.navCenterImg.setImageResource(R.drawable.ic_orange_center);
                 binding.auctionImg.setImageResource(R.drawable.ic_auction);
                 binding.panelImg.setImageResource(R.drawable.ic_panel);
             }
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setFrag(AuctionFragment.newInstance());
                 binding.mallImg.setImageResource(R.drawable.ic_mall);
                 binding.consImg.setImageResource(R.drawable.ic_consignment);
-                binding.navCenterImg.setImageResource(R.drawable.ic_asset);
+                binding.navCenterImg.setImageResource(R.drawable.ic_center);
                 binding.auctionImg.setImageResource(R.drawable.ic_orange_auction);
                 binding.panelImg.setImageResource(R.drawable.ic_panel);
             }
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setFrag(PanelFragment.newInstance());
                 binding.mallImg.setImageResource(R.drawable.ic_mall);
                 binding.consImg.setImageResource(R.drawable.ic_consignment);
-                binding.navCenterImg.setImageResource(R.drawable.ic_asset);
+                binding.navCenterImg.setImageResource(R.drawable.ic_center);
                 binding.auctionImg.setImageResource(R.drawable.ic_auction);
                 binding.panelImg.setImageResource(R.drawable.ic_orange_panel);
             }

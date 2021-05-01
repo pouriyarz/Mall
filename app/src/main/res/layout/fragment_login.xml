@@ -11,11 +11,11 @@
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="@dimen/_95sdp"
-            android:layout_height="@dimen/_95sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:src="@drawable/logo"
+            android:src="@drawable/ic_logo"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="@dimen/_80sdp"/>
 
@@ -153,7 +153,7 @@
             android:layout_height="@dimen/_28sdp"
             android:layout_marginStart="@dimen/_12sdp"
             android:layout_width="@dimen/_50sdp"
-            app:srcCompat="@drawable/ic_google"
+            app:srcCompat="@drawable/googleg_standard_color_18"
             app:layout_constraintStart_toEndOf="@id/facebook_login_but"
             app:layout_constraintTop_toTopOf="parent"/>
 
@@ -162,6 +162,7 @@
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginStart="@dimen/_12sdp"
                 android:layout_width="@dimen/_50sdp"
+                android:tint="@color/orange"
                 app:srcCompat="@drawable/ic_phone"
                 app:layout_constraintStart_toEndOf="@id/google_account"
                 app:layout_constraintTop_toTopOf="parent"/>

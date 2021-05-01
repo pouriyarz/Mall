@@ -14,8 +14,7 @@
     <item
         android:id="@+id/centerFragment"
         tools:ignore="MenuTitle"
-        android:iconTint="@color/clr_white"
-        android:icon="@drawable/ic_center_btn"/>
+        android:iconTint="@color/clr_white" />
 
 
     <item

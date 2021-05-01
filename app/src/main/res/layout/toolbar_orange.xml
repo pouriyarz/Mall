@@ -27,7 +27,8 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="CONSIGNMENT"
+                android:text="@string/consignment"
+                android:textAllCaps="true"
                 android:textColor="@color/clr_white"
                 android:textSize="20sp"
                 android:textStyle="bold" />

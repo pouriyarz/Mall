@@ -120,7 +120,7 @@
                     android:id="@+id/nav_center_img"
                     android:layout_width="@dimen/_45sdp"
                     android:layout_height="@dimen/_45sdp"
-                    android:src="@drawable/ic_asset"
+                    android:src="@drawable/ic_center"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
